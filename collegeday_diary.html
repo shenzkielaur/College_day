@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    border-color: white;
+    background-image: url(Images/Pink\ aesthetic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+.header {
+    background-color: rgba(43, 43, 43, 0.5);
+    padding: 30px;
+    text-align: center;
+    opacity: 1;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #fff;
+    opacity: 1;
+}
+
+.navbar {
+    background-color: #333;
+    opacity: 0.8;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.introduction {
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.timeline {
+    padding: 30px;
+    margin-top: 20px;
+    
+}
+
+.event {
+    background-color: rgba(43, 43, 43, 0.5);
+    opacity: 1;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    transform: translateX(-100%); /* Slide in from the left */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.event.visible {
+    opacity: 1;
+    transform: translateX(0); /* Reset position */
+}
+
+.event img, .event video {
+    max-width: 50%;
+    display:inherit;
+    margin: 10px auto;
+    border-radius: 8px;
+    opacity: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(43, 43, 43, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+    box-sizing: border-box;
+}
+.header-image{
+    height: 80px;
+    opacity: 1;
+}
+
+.translucent-text {
+  opacity: 1; /* 100% opaque */
+  color: white;
+}
+
+.event-text{
+    opacity: 1;
+}
+.introduction p{
+    font-size: 30px;
+}
+.introduction h2{
+    font-size: 40px;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.event {
+    opacity: 0;
+    animation: slideIn 2.0s ease-out forwards;
+    animation-delay: 0.5s;
+    
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>
+            <img src="lovely_cat.gif" alt="cat" class="header-image"> Welcome to the College Day Diary
+        <img src="lovely_cat.gif" class="header-image"></h1>
+        <p class="translucent-text">From Games to Glory – Let’s Make Memories Together!</p>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="home" class="introduction">
+        <h2>About College Day Diary</h2>
+        <p>Through this diary, you’ll get a glimpse of the events, fun, and hustle that make up the student life. Explore photos, videos, and anecdotes to relive the moments that shape our college day event experience.</p>
+        <img src="Images/cat_bouncing.gif" alt="cat bouncing" height="300px"/>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2>📅 Daily Timeline</h2>
+        <div class="event">
+            <h3>8:00 AM – Morning before the CCS game event starts</h3>
+            <p>
+                Before the CCS games started, I was waiting for my friends to gather and talk to each other.</p>
+            <img src="Images/morning_before_ccs_games.jpg" alt="Morning" height="200px"/>
+
+        </div>
+
+        <div class="event">
+            <h3>9:00 AM – The starting of CCS games</h3>
+            
+            <p>They had different games depending on categories. They have programming, Mobile Legends tournaments, typing tests, and more.</p>
+            <img src="Images/Morning event.jpg" alt="morning event" height="200px">
+        </div>
+
+        <div class="event">
+            <h3>10:55 PM – Morning event still ongoing</h3>
+            <p>I was still watching the CCS games, and it was still ongoing. When I was still watching, my friend wanted to take a picture with me.</p>
+            <img src="Images/morning event with one friend.jpg" alt="a boy and a girl" height="200px"/>
+        </div>
+
+        <div class="event">
+            <h3>3:30 PM – Bingo games</h3> 
+            <p>This time, I enjoyed bingo games. It was so fun and thrilling at the same time.</p>
+            <img src="Images/bingo-games.jpg" alt="girl with a bingo card" height="200px"/>
+            <hr>
+            <img src="Images/bingo-card.jpg" alt="bingo card" height="200px"/>
+            <hr>
+            <img src="Images/bingo with my classmates.jpg" alt="people" height="200px"/>
+        </div>
+
+        <div class="event">
+            <h3>4:30 PM – Institutional Quiz Bowl</h3>
+            <p>
+                My classmates and I were supporting the CCS department for the quiz bowl. However, they didn't win as first placers, but it was still fun to watch.</p>
+            <img src="Images/Picture with my classmates.jpg" alt="People taking a photo" height="200px"/>
+            <hr>
+            <video controls>
+                <source src="Images/Institutional quiz bowl.mp4" height="200px" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Designed with 💙 by Lauryn Salise</p>
+        <p>&copy; 2024 College Day Diary. All rights reserved.</p>
+    </footer>
+</body>
+</html>
